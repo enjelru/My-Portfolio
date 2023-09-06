@@ -2,8 +2,6 @@
   font-family: 'Roboto', Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
-  color: #fff;
-
 }
 
 .hero-image {
@@ -31,7 +29,7 @@ h2 {
   padding: 35px 0;
   margin: 0 70px;
   /* border: 1px solid blue; */
-  /* color: #fff; */
+  color: #fff;
   flex-wrap: wrap;
 }
 
@@ -41,18 +39,18 @@ h2 {
 
 .nav-links a {
   text-decoration: none;
-  /* color: #fff; */
+  color: #fff;
   margin-left: 30px;
 }
 
 .nav-links a {
-  list-style: ;
+  list-style: none;
 }
 .my-name {
   font-size: 6rem;
   margin: 0;
   padding: 0;
-  /* color: #fff; */
+  color: #fff;
 }
 
 h3 {
@@ -72,10 +70,11 @@ h3 {
 }
 
 .about-me {
-  background-color: gray;
-  margin: auto;
+  background-color: #424141;
+  /* margin: auto; */
   text-align: center;
   padding: 10%;
+  color: #fff;
 }
 
 .portfolio-container {
@@ -94,6 +93,80 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
+}
 
+.see-button {
+  background-color: #72b1f4;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 4px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.container-two {
+  background-color: #625f5f;
+
+
+}
+
+.contact-me {
+  text-align: center;
+}
+
+
+.media-box {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 90%;
+  min-width: 600px;
+}
+
+.input-group  {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  font-size: 16px;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  cursor: text;
+}
+
+button {
+  padding: 10px;  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 50%;
+  cursor: pointer;
+  position: relative;
+  left: 25%;
+}
+
+footer {
+  background-color: #424141;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
 }
