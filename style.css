@@ -176,8 +176,13 @@ button {
   width: 100%;
   cursor: pointer;
   position: relative;
-  
+  font-size: 18px;
 }
+
+.cv {
+  margin-top: 16px;
+}
+
 
 input:focus~label,
 input:valid~label,
@@ -197,14 +202,28 @@ textarea:valid~label {
   flex-basis: 48%;
 }
 
+.right {
+  margin-left: 40px;
+}
+
 img {
   width: 48px;
   height: auto;
+  margin-right: 18px;
 }
 
-.right {
-  margin-left: 30px;
+.mailbox .con-link{
+  /* border: 1px solid salmon; */
+  display: flex;
+  align-items: center; 
+  margin-bottom: 14px;
 }
+
+.left {
+  text-align: center;
+}
+
+
 
 footer {
   background-color: #424141;
