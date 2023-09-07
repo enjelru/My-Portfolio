@@ -2,6 +2,7 @@
   font-family: 'Roboto', Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .hero-image {
@@ -31,6 +32,7 @@ h2 {
   /* border: 1px solid blue; */
   color: #fff;
   flex-wrap: wrap;
+  font-size: 1.5em;
 }
 
 /* .lightblue-span {
@@ -62,12 +64,21 @@ h3 {
 .hero-text {
   /* border: 1px solid blue; */
   text-align: center;
-  /* color: #fff; */
   width: 100%;
   top: 40%;
   position: relative;
   transform: translateY(-50%);
+  color: #fff;
 }
+
+/* .yellow-box {
+  background-color: yellow;
+  color: rgb(41, 40, 42);
+  padding: 20px;
+  width: 40%;
+  position: absolute;
+  left: 250px;
+} */
 
 .about-me {
   background-color: #424141;
@@ -108,18 +119,20 @@ h3 {
 
 .container-two {
   background-color: #625f5f;
-
-
 }
 
 .contact-me {
   text-align: center;
+  color: #fff;
+  padding: 30px 0;
+  font-size: 4rem;
 }
 
-
 .media-box {
+  /* border: 1px solid salmon; */
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 form {
@@ -138,7 +151,7 @@ input, textarea {
   outline: 0;
   border: 1px solid #fff;
   background: transparent;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 label {
@@ -146,22 +159,51 @@ label {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 30px;
-  font-size: 20px;
   padding: 10px;
+  /* font-size: 20px; */
+
   color: #fff;
   cursor: text;
+  transition: 0.2s;
 }
 
 button {
-  padding: 10px;  color: #fff;
+  padding: 10px;  
+  color: #fff;
   outline: none;
   background: transparent;
   border: 1px solid #fff;
-  width: 50%;
+  width: 100%;
   cursor: pointer;
   position: relative;
-  left: 25%;
+  
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+  top: -35px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .input-group {
+  flex-basis: 48%;
+}
+
+img {
+  width: 48px;
+  height: auto;
+}
+
+.right {
+  margin-left: 30px;
 }
 
 footer {
@@ -170,3 +212,4 @@ footer {
   padding: 30px;
   color: #fff;
 }
+
