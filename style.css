@@ -36,7 +36,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-.logohdr:hover  {
+.logohdr:hover {
   transform: translateY(-5px);
   transition: all 0.4s;
 }
@@ -113,12 +113,20 @@ h2 {
 }
 
 .see-button {
-  background-color: #72b1f4;
+  background-color: rgb(114, 177, 244);
   padding: 10px 20px;
   width: 200px;
   border-radius: 4px;
+  color: #fff;
+  font-size: 1.15rem;
   margin: auto;
   cursor: pointer;
+}
+
+.see-button:hover {
+  transform: translateY(-2px);
+  transition: all 0.2s;
+  background-color: rgba(114, 177, 244, 0.7);  
 }
 
 .container-two {
@@ -205,9 +213,17 @@ button {
   font-size: 1.2rem;
 }
 
-.cv {
+
+.cv-btn {
   margin-top: 16px;
   margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.cv-btn:hover {
+  /* transform: translateY(-2px); */
+  transition: all 0.2s;
+  background-color: rgba(114, 177, 244, 0.7);
 }
 
 
@@ -237,6 +253,12 @@ img {
   width: 48px;
   height: auto;
   margin-right: 18px;
+}
+
+.img-fly:hover {
+  transform: translateY(-3px);
+  transition: all 0.2s;
+  /* background-color: rgba(114, 177, 244, 0.7);  */
 }
 
 .material-symbols-outlined {
