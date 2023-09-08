@@ -4,21 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="scroll-to-top">
     
     <div class="hero-image">
       <div class="header">
-        <h2>PORT<span class="lightblue-span" style="color: red;">FOLIO</span></h2>
+        <h2 class="logohdr">PORT<span class="header-logo" style="color: red;">FOLIO</span></h2>
         <div class="nav-links">
           <nav>
             <ul>
-              <a href="#" target="_blank" rel="noopener, noreferrer">Home</a>
-              <a href="#about" rel="noopener, noreferrer">About</a>
-              <a href="#portfolio" rel="noopener, noreferrer">Portfolio</a>
-              <a href="#contact" rel="noopener, noreferrer">Contact</a> 
+              <li class="logohdr"><a href="#" target="_blank" rel="noopener, noreferrer"><span>Home</span></a>
+              </li>
+              <li class="logohdr"><a href="#about" rel="noopener, noreferrer">About</a>
+              </li>
+              <li class="logohdr"><a href="#portfolio" rel="noopener, noreferrer">Portfolio</a></li>
+              <li class="logohdr"><a href="#contact" rel="noopener, noreferrer">Contact</a></li> 
             </ul>
           </nav>
 
@@ -53,15 +57,18 @@
   
     <div class="container-two" id="contact">
       <div class="info-box">
-        <h4 class="contact-me">Contact Me</h4> 
+        <div class="conme"><h4 class="contact-me">Contact Me</h4> 
+        </div>
         <div class="media-box">
           <div class="left">
             <div class="mailbox">
-              <p class="con-link"><img src="mail-214-128.png" alt="email-logo">
-                yourName@gmail.com</p>
+              <p class="con-link"><span class="material-symbols-outlined">
+                mail
+                </span>yourName@gmail.com</p>
             </div>
             <div class="mailbox">
-              <p class="con-link"><img src="icon-phone-line-32.png" alt="">####-###-####</p>
+              <p class="con-link"><span class="material-symbols-outlined">
+                call</span>####-###-####</p>
             </div>
             <div>
               <img src="LinkedIn_icon.svg.png" alt="linkedin">
@@ -95,6 +102,11 @@
   
       </div>
     </div>
+
+    
+    <a href="#scroll-to-top"><span class="go-to-top active">⬆</span></a>
+    
+
     <footer>
       <p>&copy 2023  Sharmaine Cardines</p>
     </footer>
