@@ -165,10 +165,6 @@ h2 {
   transform: translateX(-3.5em);
 }
 
-
-
-
-/* ================ DOWNLOAD BUTTON CV ================ */
 .media-box {
   display: flex;
   justify-content: center;
@@ -279,7 +275,7 @@ img {
   margin-right: 0.2em;
   padding: 0;
 }
-/* ================ START DOWNLOAD BUTTON CV LAYOUT================ */
+
 .mailbox .con-link {
   /* border: 1px solid salmon; */
   display: flex;
@@ -292,10 +288,6 @@ img {
 .left {
   text-align: center;
 }
-/* ================ END OF DOWNLOAD BUTTON CV ================ */
-
-
-
 
 footer {
   background-color: #424141;
@@ -326,7 +318,6 @@ footer {
   /* transform: translateY(-80px); */
   /* visibility: hidden; */
   color: #fff;
-
 }
 
 .go-to-top:hover {
@@ -334,3 +325,8 @@ footer {
   transform: translateY(-4px);
 }
 
+@media screen and (max-width: 280px){
+  html, body {
+    width: 100vh;
+  }
+}
