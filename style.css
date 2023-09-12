@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
+  /* width: 100vh; */
 }
 
 .hero-image {
@@ -14,8 +15,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  /* width: 100%; */
-  /* border: 2px solid blue; */
 }
 
 h2 {
@@ -158,7 +157,8 @@ h2 {
 }
 
 .contact-me {
-  display: inline-block;
+  border: 1px solid salmon;
+  display: block;
   color: #fff;
   padding: 30px 0;
   font-size: 4rem;
@@ -233,7 +233,6 @@ button {
   background-color: rgba(114, 177, 244, 0.7);
 }
 
-
 input:focus~label,
 input:valid~label,
 textarea:focus~label,
@@ -280,7 +279,6 @@ img {
   /* border: 1px solid salmon; */
   display: flex;
   align-items: center; 
-  
   color: #fff;
   font-size: 18px;
 }
@@ -326,7 +324,13 @@ footer {
 }
 
 @media screen and (max-width: 280px){
-  html, body {
+  html, body, .container {
     width: 100vh;
+  }
+  .contact-me {
+      transform: translateX(0em);
+  }
+  button, input, textarea {
+    width: 90%;
   }
 }
