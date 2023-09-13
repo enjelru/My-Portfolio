@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
   /* width: 100vh; */
 }
+/* 
+body, html {
+  width: 100vw;
+  height: 100vh;
+} */
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(arch.jpg);
@@ -47,12 +52,9 @@ h2 {
 }
 
 .nav-links ul {
-  list-style: none;
-}
-
-.nav-links ul {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .my-name {
@@ -60,8 +62,8 @@ h2 {
   margin: 0;
   padding: 0;
   color: #fff;
-  /* border: 1px solid salmon ; */
-  min-width: 200px;
+  border: 1px solid salmon ;
+  /* max-width: 200px; */
   
 }
 
@@ -153,7 +155,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin: 0;
-
 }
 
 .contact-me {
@@ -326,38 +327,64 @@ footer {
 /* RESPONSIVE STYLE */
 
 @media screen and (max-width: 280px){
-  html, body, .container {
-    width: 100vh;
+  html, 
+  body, {
+    width: 100vw;
   }
+
   .contact-me {
       transform: translateX(0em);
+      font-size: 3rem;
   }
+
   form  {
-    min-width: 450px;
+    min-width: 200px;
   }
+
   button, input, textarea {
     width: 90%;
   }
+
   div.row {
     justify-content: initial;
   }
+
   .row .input-group {
     flex-basis: 47.5%;
   }
+
   .my-name {
-    font-size: 4rem;
+    font-size: 3rem;
   }
+
   h3.sub-hero {
     font-size: 1.5rem;
   }
+
   .material-symbols-outlined {
-    font-size: 3rem;
+    font-size: 2rem;
   }
+
   .about-me > p {
     margin-top: 0.7em;
+    font-size: 1rem;
   }
-  .go-to-top {
-    right: 90px;
-  }
-}
 
+  .about-me {
+    padding: 4em 2em;
+  }
+
+  .go-to-top {
+    right: 80px;
+  }
+
+  .portfolio-item {
+    width: 300px;
+    max-height: 450px;
+  }
+  .mailbox .con-link {
+    font-size: 16px;
+  }
+  
+  
+}
