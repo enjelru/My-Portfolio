@@ -157,7 +157,7 @@ h2 {
 }
 
 .contact-me {
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
   display: block;
   color: #fff;
   padding: 30px 0;
@@ -173,6 +173,7 @@ h2 {
 }
 
 form {
+  /* border: 1px solid salmon; */
   width: 90%;
   min-width: 500px;
 }
@@ -199,7 +200,6 @@ label {
   left: 0;
   top: 0;
   padding: 10px;
-  /* font-size: 20px; */
 
   color: #fff;
   cursor: text;
@@ -270,7 +270,7 @@ img {
 .material-symbols-outlined {
   color: #fff;
   /* border: 1px solid salmon; */
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-right: 0.2em;
   padding: 0;
 }
@@ -323,6 +323,8 @@ footer {
   transform: translateY(-4px);
 }
 
+/* RESPONSIVE STYLE */
+
 @media screen and (max-width: 280px){
   html, body, .container {
     width: 100vh;
@@ -330,7 +332,32 @@ footer {
   .contact-me {
       transform: translateX(0em);
   }
+  form  {
+    min-width: 450px;
+  }
   button, input, textarea {
     width: 90%;
   }
+  div.row {
+    justify-content: initial;
+  }
+  .row .input-group {
+    flex-basis: 47.5%;
+  }
+  .my-name {
+    font-size: 4rem;
+  }
+  h3.sub-hero {
+    font-size: 1.5rem;
+  }
+  .material-symbols-outlined {
+    font-size: 3rem;
+  }
+  .about-me > p {
+    margin-top: 0.7em;
+  }
+  .go-to-top {
+    right: 90px;
+  }
 }
+
