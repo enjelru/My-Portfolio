@@ -114,7 +114,7 @@ div.header {
   background-color: rgba(114, 177, 244, 0.7);  
 }
 
-.see-button {
+div.see-button {
   background-color: rgb(114, 177, 244);
   padding: 10px 20px;
   width: 200px;
@@ -195,7 +195,7 @@ label {
   transition: 0.2s;
 }
 
-button {
+button.cv-btn {
   padding: 10px;  
   color: #fff;
   outline: none;
@@ -399,6 +399,17 @@ h2.logohdr {
 
   li.logohdr {
     margin: 0;
+  }
+
+  div.see-button {
+    width: 120px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  button.cv-btn {
+    width: 75%;
+    font-size: 0.8rem;
   }
 
 }
