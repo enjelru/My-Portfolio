@@ -358,6 +358,11 @@ footer {
     padding: 4em 2em;
   }
 
+  img.item-px {
+    width: 280px;
+    min-height: 450px;
+  }
+
   .mailbox .con-link {
     font-size: 12px;
   }
@@ -371,6 +376,7 @@ footer {
     /* margin-left: 0; */
     font-size: 0.8rem;
   }
+
   .nav-links ul {
   padding: 0;
   flex-wrap: nowrap;
@@ -385,6 +391,7 @@ footer {
 
   div.header {
     margin: 0;
+    padding-bottom: 0;
   }
 
   li.logohdr {
@@ -401,15 +408,18 @@ footer {
     width: 75%;
     font-size: 0.8rem;
   }
+
   .right form {
     margin-left: 28px;
   }
+
   button.cv-btn.active {
     margin-left: 50px;
     width: 50%;
     margin-bottom: 20px;
     margin-top: 0px;
   }
+
   img.img-fly {
     width: 35px;
     margin-right: 10px;
