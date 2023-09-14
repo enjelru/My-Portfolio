@@ -5,30 +5,24 @@
   scroll-behavior: smooth;
   /* width: 100vh; */
 }
-/* 
-body, html {
-  width: 100vw;
-  height: 100vh;
-} */
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(arch.jpg);
   /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
-
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-h2 {
+h2.logohdr {
   margin: 0;
   padding: 0;
   cursor: pointer;
 }
 
-.header {
+div.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +56,7 @@ h2 {
   margin: 0;
   padding: 0;
   color: #fff;
-  border: 1px solid salmon ;
+  /* border: 1px solid salmon ; */
   /* max-width: 200px; */
   
 }
@@ -99,12 +93,6 @@ h2 {
   padding: 50px;
 }
 
-.portfolio-item {
-  /* border: 1px solid blue; */
-  width: 300px;
-  min-height: 450px;
-}
-
 .portfolio-grid {
   display: flex;
   justify-content: center;
@@ -117,7 +105,7 @@ h2 {
 .item-px {
   width: 300px;
   min-height: 450px;
-  display: block;
+  /* display: block; */
 }
 
 .item-px:hover {
@@ -256,10 +244,11 @@ textarea:valid~label {
   margin-left: 40px;
 }
 
-img {
+.left img {
   width: 48px;
   height: auto;
   margin-right: 18px;
+  /* border: 1px solid salmon; */
 }
 
 .img-fly:hover {
@@ -324,17 +313,18 @@ footer {
   transform: translateY(-4px);
 }
 
+
+/* from 0 to 280px mag trigger ang media queries */
 /* RESPONSIVE STYLE */
 
 @media screen and (max-width: 280px){
-  html, 
-  body, {
+  html, body {
     width: 100vw;
   }
 
   .contact-me {
       transform: translateX(0em);
-      font-size: 3rem;
+      font-size: 2rem;
   }
 
   form  {
@@ -354,11 +344,11 @@ footer {
   }
 
   .my-name {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   h3.sub-hero {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 
   .material-symbols-outlined {
@@ -367,7 +357,7 @@ footer {
 
   .about-me > p {
     margin-top: 0.7em;
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .about-me {
@@ -378,13 +368,37 @@ footer {
     right: 80px;
   }
 
-  .portfolio-item {
-    width: 300px;
-    max-height: 450px;
-  }
   .mailbox .con-link {
-    font-size: 16px;
+    font-size: 12px;
+  }
+
+  img {
+    width: 48px;
+    height: auto;
+    margin-right: 18px;
+  }
+  .nav-links a {
+    /* margin-left: 0; */
+    font-size: 0.8rem;
+  }
+  .nav-links ul {
+  padding: 0;
+  flex-wrap: nowrap;
+  margin-left: -15px;
   }
   
-  
+h2.logohdr {
+  margin-left: 45px;
+  cursor: pointer;
+  font-size: 2rem;
+  }
+
+  div.header {
+    margin: 0;
+  }
+
+  li.logohdr {
+    margin: 0;
+  }
+
 }
